@@ -36,6 +36,7 @@ module.exports = {
     quotes: ['error', 'single'],
     'no-console': 'warn',
     'react/jsx-key': 'error',
+    'react/react-in-jsx-scope': "off",
     'import/newline-after-import': 'error',
     'import/no-duplicates': 'error',
     'import/order': [
