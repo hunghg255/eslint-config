@@ -1,6 +1,6 @@
 {
   "name": "@hunghg255/eslint-config-ts",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Hung <giahunghust@gmail.com> (https://github.com/hunghg255/)",
   "keywords": [
     "eslint-config"
