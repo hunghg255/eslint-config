@@ -1,6 +1,6 @@
 {
   "name": "@hunghg255/eslint-config-react",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "author": "Hung <giahunghust@gmail.com> (https://github.com/hunghg255/)",
   "keywords": [
     "eslint-config"
@@ -28,7 +28,7 @@
     "eslint-plugin-promise": "^6.0.1",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-unicorn": "^47.0.0",
+    "eslint-plugin-unicorn": "^46.0.1",
     "prettier": "^2.8.8"
   },
   "homepage": "https://github.com/hunghg255/eslint-config",
