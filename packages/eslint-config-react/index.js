@@ -159,7 +159,7 @@ module.exports = {
     indent: ['error', 2],
     'linebreak-style': ['error', 'unix'],
     quotes: ['error', 'single'],
-    'no-console': 'warn',
+    "no-console": ['warn', { 'allow': ['error'] }],
     'react/jsx-key': 'error',
     'react/react-in-jsx-scope': "off",
     'import/newline-after-import': 'error',
