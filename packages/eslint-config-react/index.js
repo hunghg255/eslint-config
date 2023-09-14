@@ -262,6 +262,7 @@ module.exports = {
     // Force object shorthand where possible
     'object-shorthand': 'error',
     // No useless destructuring/importing/exporting renames
-    'no-useless-rename': 'error'
+    'no-useless-rename': 'error',
+    "import/no-cycle": "error"
   }
 }
