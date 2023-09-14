@@ -37,8 +37,5 @@
   },
   "bugs": {
     "url": "https://github.com/hunghg255/eslint-config/issues"
-  },
-  "devDependencies": {
-    "jsonc-eslint-parser": "^2.3.0"
   }
 }
