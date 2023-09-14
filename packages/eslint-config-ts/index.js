@@ -25,6 +25,128 @@ module.exports = {
     }
   },
   plugins: ['@typescript-eslint', 'import'],
+  overrides: [
+    {
+      files: ['tsconfig.json', 'tsconfig.*.json'],
+      parser: 'jsonc-eslint-parser',
+      rules: {
+        'jsonc/sort-keys': [
+          'error',
+          {
+            pathPattern: '^$',
+            order: [
+              'extends',
+              'compilerOptions',
+              'references',
+              'files',
+              'include',
+              'exclude',
+            ],
+          },
+          {
+            pathPattern: '^compilerOptions$',
+            order: [
+              /* Projects */
+              'incremental',
+              'composite',
+              'tsBuildInfoFile',
+              'disableSourceOfProjectReferenceRedirect',
+              'disableSolutionSearching',
+              'disableReferencedProjectLoad',
+              /* Language and Environment */
+              'target',
+              'lib',
+              'jsx',
+              'experimentalDecorators',
+              'emitDecoratorMetadata',
+              'jsxFactory',
+              'jsxFragmentFactory',
+              'jsxImportSource',
+              'reactNamespace',
+              'noLib',
+              'useDefineForClassFields',
+              'moduleDetection',
+              /* Modules */
+              'module',
+              'rootDirs',
+              'moduleResolution',
+              'baseUrl',
+              'paths',
+              'typeRoots',
+              'types',
+              'allowUmdGlobalAccess',
+              'moduleSuffixes',
+              'allowImportingTsExtensions',
+              'resolvePackageJsonExports',
+              'resolvePackageJsonImports',
+              'customConditions',
+              'resolveJsonModule',
+              'allowArbitraryExtensions',
+              'noResolve',
+              /* JavaScript Support */
+              'allowJs',
+              'checkJs',
+              'maxNodeModuleJsDepth',
+              /* Emit */
+              'declaration',
+              'declarationMap',
+              'emitDeclarationOnly',
+              'sourceMap',
+              'inlineSourceMap',
+              'outFile',
+              'outDir',
+              'removeComments',
+              'noEmit',
+              'importHelpers',
+              'importsNotUsedAsValues',
+              'downlevelIteration',
+              'sourceRoot',
+              'mapRoot',
+              'inlineSources',
+              'emitBOM',
+              'newLine',
+              'stripInternal',
+              'noEmitHelpers',
+              'noEmitOnError',
+              'preserveConstEnums',
+              'declarationDir',
+              'preserveValueImports',
+              /* Interop Constraints */
+              'isolatedModules',
+              'verbatimModuleSyntax',
+              'allowSyntheticDefaultImports',
+              'esModuleInterop',
+              'preserveSymlinks',
+              'forceConsistentCasingInFileNames',
+              /* Type Checking */
+              'strict',
+              'noImplicitAny',
+              'strictNullChecks',
+              'strictFunctionTypes',
+              'strictBindCallApply',
+              'strictPropertyInitialization',
+              'noImplicitThis',
+              'useUnknownInCatchVariables',
+              'alwaysStrict',
+              'noUnusedLocals',
+              'noUnusedParameters',
+              'exactOptionalPropertyTypes',
+              'noImplicitReturns',
+              'noFallthroughCasesInSwitch',
+              'noUncheckedIndexedAccess',
+              'noImplicitOverride',
+              'noPropertyAccessFromIndexSignature',
+              'allowUnusedLabels',
+              'allowUnreachableCode',
+              /* Completeness */
+              'skipDefaultLibCheck',
+              'skipLibCheck',
+            ],
+          },
+        ],
+      }
+    }
+  ],
   rules: {
     'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': [
@@ -124,6 +246,6 @@ module.exports = {
     // Force object shorthand where possible
     'object-shorthand': 'error',
     // No useless destructuring/importing/exporting renames
-    'no-useless-rename': 'error'
-  }
+    'no-useless-rename': 'error',
+  },
 }
