@@ -13,7 +13,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:import/errors',
-    'plugin:import/warnings'
+    'plugin:import/warnings',
   ],
   settings: {
     'react': {
@@ -27,7 +27,7 @@ module.exports = {
       typescript: {}
     }
   },
-  plugins: ['@typescript-eslint', 'import'],
+  plugins: ['@typescript-eslint', 'import', 'unused-imports'],
   overrides: [
     {
       files: ['tsconfig.json', 'tsconfig.*.json'],
@@ -151,15 +151,16 @@ module.exports = {
     }
   ],
   rules: {
-    'no-unused-vars': 'off',
-    '@typescript-eslint/no-unused-vars': [
-      'error',
-      { vars: 'all', args: 'after-used', ignoreRestSiblings: false }
+    "no-unused-vars": "off", // or "@typescript-eslint/no-unused-vars": "off",
+    "unused-imports/no-unused-imports": "error",
+    "unused-imports/no-unused-vars": [
+      "warn",
+      { "vars": "all", "varsIgnorePattern": "^_", "args": "after-used", "argsIgnorePattern": "^_" }
     ],
     indent: ['error', 2],
     'linebreak-style': ['error', 'unix'],
     quotes: ['error', 'single'],
-    "no-console": ['warn', { 'allow': ['error'] }],
+    "no-console": ["error", { "allow": ["warn", "error"] }],
     'react/jsx-key': 'error',
     'react/react-in-jsx-scope': "off",
     'import/newline-after-import': 'error',
@@ -263,6 +264,6 @@ module.exports = {
     'object-shorthand': 'error',
     // No useless destructuring/importing/exporting renames
     'no-useless-rename': 'error',
-    "import/no-cycle": "error"
+    "import/no-cycle": "error",
   }
 }

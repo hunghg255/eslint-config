@@ -24,7 +24,7 @@ module.exports = {
       typescript: {}
     }
   },
-  plugins: ['@typescript-eslint', 'import'],
+  plugins: ['@typescript-eslint', 'import', 'unused-imports'],
   overrides: [
     {
       files: ['tsconfig.json', 'tsconfig.*.json'],
