@@ -14,6 +14,7 @@ module.exports = {
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:import/errors',
     'plugin:import/warnings',
+    'plugin:import/typescript'
   ],
   settings: {
     'react': {
