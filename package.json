@@ -1,0 +1,61 @@
+{
+  "name": "@hunghg255/eslint-config",
+  "type": "module",
+  "version": "0.0.1",
+  "packageManager": "pnpm@9.12.2",
+  "description": "",
+  "author": "hunghg255 <giahung197bg@gmail.com>",
+  "license": "MIT",
+  "funding": "https://github.com/sponsors/hunghg255",
+  "homepage": "https://github.com/hunghg255/eslint-config#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hunghg255/eslint-config.git"
+  },
+  "bugs": "https://github.com/hunghg255/eslint-config/issues",
+  "keywords": [],
+  "sideEffects": false,
+  "main": "./index.js",
+  "module": "./index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "index.js",
+    "src",
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint .",
+    "check": "prettier --check .",
+    "fix": "eslint --fix . && prettier --write .",
+    "prepublishOnly": "nr build"
+  },
+  "dependencies": {
+    "@eslint-types/unicorn": "^52.0.0",
+    "@eslint/js": "^9.13.0",
+    "@eslint/markdown": "^6.2.1",
+    "eslint-config-flat-gitignore": "^0.3.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-typescript": "^3.6.3",
+    "eslint-plugin-antfu": "^2.7.0",
+    "eslint-plugin-import-x": "^4.3.1",
+    "eslint-plugin-jsonc": "^2.16.0",
+    "eslint-plugin-no-only-tests": "^3.3.0",
+    "eslint-plugin-react": "^7.37.1",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-unicorn": "^56.0.0",
+    "eslint-plugin-vue": "^9.29.1",
+    "jsonc-eslint-parser": "^2.4.0",
+    "typescript-eslint": "^8.10.0"
+  },
+  "devDependencies": {
+    "@antfu/ni": "^0.23.0",
+    "@types/eslint__js": "^8.42.3",
+    "@types/eslint-config-prettier": "^6.11.3",
+    "@types/node": "^20.16.13",
+    "@typescript-eslint/utils": "^8.10.0",
+    "eslint": "^9.13.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.6.3"
+  }
+}

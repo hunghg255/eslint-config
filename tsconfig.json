@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "es2018",
+    "module": "esnext",
+    "lib": ["esnext"],
+    "paths": {
+      "eslint-plugin-no-only-tests": [
+        "./types/eslint-plugin-no-only-tests.d.ts"
+      ],
+      "eslint-plugin-react-hooks": ["./types/eslint-plugin-react-hooks.d.ts"],
+      "eslint-plugin-react": ["./types/eslint-plugin-react.d.ts"],
+      "eslint-plugin-vue": ["./types/eslint-plugin-vue.d.ts"]
+    },
+    "moduleResolution": "Bundler",
+    "esModuleInterop": true,
+    "allowJs": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "outDir": "dist",
+    "skipDefaultLibCheck": true,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "declarationMap": true
+  },
+  "include": ["*.js", "src/*.js", "types/*.d.ts"]
+}
