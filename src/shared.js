@@ -54,6 +54,8 @@ export const GLOB_EXCLUDE = /** @type {const} */ ([
   '**/*.min.*',
   '**/LICENSE*',
   '**/__snapshots__',
+  'eslint.config.mjs',
+  'eslint.config.js',
 ])
 
 export const EXTENSIONS = /** @type {const} */ ['ts', 'js']

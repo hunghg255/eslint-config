@@ -36,14 +36,36 @@ export function imports() {
           'warn',
           {
             'newlines-between': 'always',
-            alphabetize: { order: 'asc' },
-            groups: [
-              'builtin',
-              'external',
-              'internal',
-              'parent',
-              'sibling',
-              'index',
+            alphabetize: {
+              order: 'asc',
+              caseInsensitive: true,
+            },
+            pathGroupsExcludedImportTypes: ['react'],
+            groups: ['builtin', 'external', 'internal'],
+            pathGroups: [
+              {
+                pattern: 'react',
+                group: 'external',
+                position: 'before',
+              },
+              {
+                pattern: '@+(symbols)',
+                group: 'internal',
+              },
+              {
+                pattern:
+                  '@+(api|apis|components|features|compositions|directives|enums|interfaces|layouts|layout|configs|constants|hoc|store|modules|types|services|utils|views|hooks)/**',
+                group: 'internal',
+              },
+              {
+                pattern: '@/**',
+                group: 'internal',
+              },
+              {
+                pattern: '*.scss',
+                group: 'index',
+                patternOptions: { matchBase: true },
+              },
             ],
           },
         ],
