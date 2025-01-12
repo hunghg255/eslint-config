@@ -13,7 +13,8 @@ export function stylistic() {
         '@stylistic/indent': ['error', 2],
         "@stylistic/semi-spacing": ["error"],
         "@stylistic/no-multiple-empty-lines": ["error", { "max": 1, "maxBOF": 1 }],
-        "@stylistic/function-call-argument-newline": ["error", "always"]
+        "@stylistic/block-spacing": ["error"],
+        "@stylistic/object-curly-spacing": ["error", "always"]
       }
     },
   ]
