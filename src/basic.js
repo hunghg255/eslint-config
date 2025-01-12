@@ -6,9 +6,9 @@ import { imports } from './imports.js'
 import { noOnlyTests } from './no-only-tests.js'
 import { packageJson } from './package-json.js'
 import { prettier } from './prettier.js'
+import { stylistic } from './stylistic.js'
 import { typescript } from './typescript.js'
 import { unicorn } from './unicorn.js'
-import { stylistic } from './stylistic.js'
 
 export function basic() {
   /** @type {import('eslint').Linter.Config[]} */
