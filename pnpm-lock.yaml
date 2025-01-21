@@ -20,6 +20,9 @@ importers:
       '@stylistic/eslint-plugin':
         specifier: ^2.12.1
         version: 2.12.1(eslint@9.18.0)(typescript@5.7.3)
+      '@stylistic/eslint-plugin-jsx':
+        specifier: ^2.13.0
+        version: 2.13.0(eslint@9.18.0)
       eslint-config-flat-gitignore:
         specifier: ^0.3.0
         version: 0.3.0(eslint@9.18.0)
@@ -191,6 +194,12 @@ packages:
   '@nolyfill/is-core-module@1.0.39':
     resolution: {integrity: sha512-nn5ozdjYQpUCZlWGuxcJY/KpxkWQs4DcbMCmKojjyrYDEAGy4Ce19NN4v5MduafTwJlbKc99UA8YhSVqq9yPZA==}
     engines: {node: '>=12.4.0'}
+
+  '@stylistic/eslint-plugin-jsx@2.13.0':
+    resolution: {integrity: sha512-mRAJPYTASnjMZ3Z1hxMuRNI6xcvKNGvPN6oNiR30DG3CdIt/STWkDhVs+nrcdcKh7atGlK5yHhnCfkmoJmHTbw==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    peerDependencies:
+      eslint: '>=8.40.0'
 
   '@stylistic/eslint-plugin@2.12.1':
     resolution: {integrity: sha512-fubZKIHSPuo07FgRTn6S4Nl0uXPRPYVNpyZzIDGfp7Fny6JjNus6kReLD7NI380JXi4HtUTSOZ34LBuNPO1XLQ==}
@@ -1903,6 +1912,14 @@ snapshots:
       fastq: 1.17.1
 
   '@nolyfill/is-core-module@1.0.39': {}
+
+  '@stylistic/eslint-plugin-jsx@2.13.0(eslint@9.18.0)':
+    dependencies:
+      eslint: 9.18.0
+      eslint-visitor-keys: 4.2.0
+      espree: 10.3.0
+      estraverse: 5.3.0
+      picomatch: 4.0.2
 
   '@stylistic/eslint-plugin@2.12.1(eslint@9.18.0)(typescript@5.7.3)':
     dependencies:
