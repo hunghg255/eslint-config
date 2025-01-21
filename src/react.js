@@ -48,10 +48,10 @@ export function react() {
         '@stylistic/jsx': stylisticJsx
       },
       rules: {
-        'jsx-closing-bracket-location': [1, 'tag-aligned'],
+        '@stylistic/jsx/jsx-closing-bracket-location': [1, 'tag-aligned'],
         '@stylistic/jsx/jsx-indent-props': [2, 'tab'],
         '@stylistic/jsx/jsx-max-props-per-line': [1],
-        'jsx-sort-props': [1, { multiline: 'last' }]
+        '@stylistic/jsx/jsx-sort-props': [1, { multiline: 'last' }]
       }
     },
   ]
