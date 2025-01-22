@@ -89,6 +89,8 @@ export function typescript() {
 
         // TODO: We should set the rule below to error in the future
         '@typescript-eslint/require-await': 'warn',
+
+        'indent': 'warn',
       },
     },
     {
