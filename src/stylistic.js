@@ -1,4 +1,4 @@
-import stylisticEslint from '@stylistic/eslint-plugin' ;
+import stylisticEslint from '@stylistic/eslint-plugin';
 
 export function stylistic() {
   /** @type {import('eslint').Linter.Config[]} */
@@ -12,12 +12,12 @@ export function stylistic() {
         'indent': ['error', 2],
         '@stylistic/indent': ['error', 2],
         "@stylistic/semi-spacing": ["error"],
-        "@stylistic/no-multiple-empty-lines": ["error", { "max": 1, "maxBOF": 1 }],
+        "@stylistic/no-multiple-empty-lines": ["error", { "max": 1, "maxBOF": 0, "maxEOF": 0 }],
         "@stylistic/block-spacing": ["error"],
         "@stylistic/object-curly-spacing": ["error", "always"]
       }
     },
   ]
 
-  return config ;
+  return config;
 }

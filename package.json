@@ -1,8 +1,8 @@
 {
   "name": "@hunghg255/eslint-config",
   "type": "module",
-  "version": "0.0.10",
-  "packageManager": "pnpm@9.15.3",
+  "version": "0.0.11",
+  "packageManager": "pnpm@9.15.4",
   "description": "",
   "author": "hunghg255 <giahung197bg@gmail.com>",
   "license": "MIT",
@@ -27,14 +27,14 @@
     "build": "tsc",
     "lint": "eslint .",
     "check": "prettier --check .",
-    "fix": "eslint --fix . && prettier --write .",
+    "fix": "eslint --fix .",
     "prepublishOnly": "pnpm run build"
   },
   "dependencies": {
     "@eslint-types/unicorn": "^52.0.0",
     "@eslint/js": "^9.18.0",
     "@eslint/markdown": "^6.2.1",
-    "@stylistic/eslint-plugin": "^2.12.1",
+    "@stylistic/eslint-plugin": "^2.13.0",
     "@stylistic/eslint-plugin-jsx": "^2.13.0",
     "eslint-config-flat-gitignore": "^0.3.0",
     "eslint-config-prettier": "^9.1.0",
@@ -43,21 +43,20 @@
     "eslint-plugin-import-x": "^4.6.1",
     "eslint-plugin-jsonc": "^2.18.2",
     "eslint-plugin-no-only-tests": "^3.3.0",
-    "eslint-plugin-react": "^7.37.3",
+    "eslint-plugin-react": "^7.37.4",
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-unicorn": "^56.0.1",
     "eslint-plugin-unused-imports": "^4.1.4",
     "eslint-plugin-vue": "^9.32.0",
     "jsonc-eslint-parser": "^2.4.0",
-    "typescript-eslint": "^8.19.1"
+    "typescript-eslint": "^8.21.0"
   },
   "devDependencies": {
-    "@types/eslint-config-prettier": "^6.11.3",
     "@types/eslint__js": "^8.42.3",
-    "@types/node": "^20.17.12",
-    "@typescript-eslint/utils": "^8.19.1",
+    "@types/eslint-config-prettier": "^6.11.3",
+    "@types/node": "^20.17.14",
+    "@typescript-eslint/utils": "^8.21.0",
     "eslint": "^9.18.0",
-    "prettier": "^3.4.2",
     "typescript": "^5.7.3"
   }
 }
