@@ -51,7 +51,18 @@ export function react() {
         '@stylistic/jsx/jsx-closing-bracket-location': [1, 'tag-aligned'],
         '@stylistic/jsx/jsx-max-props-per-line': [1],
         '@stylistic/jsx/jsx-sort-props': [1, { multiline: 'last' }],
-        '@stylistic/jsx/jsx-closing-tag-location': [1, 'line-aligned']
+        '@stylistic/jsx/jsx-closing-tag-location': [1, 'line-aligned'],
+        '@stylistic/jsx/jsx-wrap-multilines': [1, {
+          "declaration": "parens",
+          "assignment": "parens",
+          "return": "parens",
+          "arrow": "parens",
+          "condition": "ignore",
+          "logical": "ignore",
+          "prop": "ignore",
+          "propertyValue": "ignore"
+        }],
+        '@stylistic/jsx/jsx-newline': [1, { "prevent": true, "allowMultilines": true }]
       }
     },
   ]
