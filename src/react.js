@@ -62,7 +62,8 @@ export function react() {
           "prop": "ignore",
           "propertyValue": "ignore"
         }],
-        '@stylistic/jsx/jsx-newline': [1, { "prevent": true, "allowMultilines": true }]
+        '@stylistic/jsx/jsx-newline': [1, { "prevent": true, "allowMultilines": true }],
+        '@stylistic/jsx-one-expression-per-line': "error"
       }
     },
   ]
