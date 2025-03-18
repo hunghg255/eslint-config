@@ -1,7 +1,7 @@
 // @ts-check
 
-import * as importPlugin from 'eslint-plugin-import-x'
-import unusedImports from "eslint-plugin-unused-imports";
+import * as importPlugin from 'eslint-plugin-import-x';
+import unusedImports from 'eslint-plugin-unused-imports';
 
 export function imports() {
   /** @type {import('eslint').Linter.Config[]} */
@@ -11,7 +11,7 @@ export function imports() {
       plugins: {
         // @ts-expect-error incorrect type
         import: importPlugin,
-        "unused-imports": unusedImports,
+        'unused-imports': unusedImports,
       },
       settings: {
         'import-x/resolver': {
@@ -34,16 +34,16 @@ export function imports() {
         //   'warn',
         //   { 'prefer-inline': true },
         // ],
-        "no-unused-vars": "off", // or "@typescript-eslint/no-unused-vars": "off",
-        "unused-imports/no-unused-imports": "error",
-        "unused-imports/no-unused-vars": [
-            "warn",
-            {
-                "vars": "all",
-                "varsIgnorePattern": "^_",
-                "args": "after-used",
-                "argsIgnorePattern": "^_",
-            },
+        'no-unused-vars': 'off', // or "@typescript-eslint/no-unused-vars": "off",
+        'unused-imports/no-unused-imports': 'error',
+        'unused-imports/no-unused-vars': [
+          'warn',
+          {
+            'vars': 'all',
+            'varsIgnorePattern': '^_',
+            'args': 'after-used',
+            'argsIgnorePattern': '^_',
+          },
         ],
         'import/order': [
           'warn',
@@ -84,7 +84,7 @@ export function imports() {
         ],
       },
     },
-  ]
+  ];
 
-  return config
+  return config;
 }

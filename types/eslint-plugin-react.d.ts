@@ -1,12 +1,12 @@
-import type { Linter } from 'eslint'
+import type { Linter } from 'eslint';
 
 declare module 'eslint-plugin-react' {
-  const recommended: Linter.Config
+  const recommended: Linter.Config;
   export default {
     configs: {
       flat: {
         recommended,
       },
     },
-  }
+  };
 }

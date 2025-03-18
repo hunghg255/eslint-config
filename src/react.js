@@ -1,14 +1,14 @@
 // @ts-check
 
-import stylisticJsx from '@stylistic/eslint-plugin-jsx'
+import stylisticJsx from '@stylistic/eslint-plugin-jsx';
 
-import reactPlugin from 'eslint-plugin-react'
-import reactHooksPlugin from 'eslint-plugin-react-hooks'
+import reactPlugin from 'eslint-plugin-react';
+import reactHooksPlugin from 'eslint-plugin-react-hooks';
 
-import { GLOB_TS, GLOB_TSX } from './shared.js'
+import { GLOB_TS, GLOB_TSX } from './shared.js';
 
 /** @type {import('eslint').Linter.Config} */
-const reactRecommended = reactPlugin.configs.flat.recommended
+const reactRecommended = reactPlugin.configs.flat.recommended;
 
 export function react() {
   /** @type {import('eslint').Linter.Config[]} */
@@ -53,20 +53,20 @@ export function react() {
         '@stylistic/jsx/jsx-sort-props': [1, { multiline: 'last' }],
         '@stylistic/jsx/jsx-closing-tag-location': [1, 'line-aligned'],
         '@stylistic/jsx/jsx-wrap-multilines': [1, {
-          "declaration": "parens-new-line",
-          "assignment": "parens-new-line",
-          "return": "parens-new-line",
-          "arrow": "parens-new-line",
-          "condition": "ignore",
-          "logical": "ignore",
-          "prop": "ignore",
-          "propertyValue": "ignore"
+          'declaration': 'parens-new-line',
+          'assignment': 'parens-new-line',
+          'return': 'parens-new-line',
+          'arrow': 'parens-new-line',
+          'condition': 'ignore',
+          'logical': 'ignore',
+          'prop': 'ignore',
+          'propertyValue': 'ignore'
         }],
-        '@stylistic/jsx/jsx-newline': [1, { "prevent": true, "allowMultilines": true }],
-        '@stylistic/jsx-one-expression-per-line': "error"
+        '@stylistic/jsx/jsx-newline': [1, { 'prevent': true, 'allowMultilines': true }],
+        '@stylistic/jsx-one-expression-per-line': 'error'
       }
     },
-  ]
+  ];
 
-  return config
+  return config;
 }

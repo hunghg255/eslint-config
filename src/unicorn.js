@@ -2,7 +2,7 @@
 
 /// <reference types="@eslint-types/unicorn" />
 
-import plugin from 'eslint-plugin-unicorn'
+import plugin from 'eslint-plugin-unicorn';
 
 export function unicorn() {
   /** @type {import('eslint').Linter.Config[]} */
@@ -73,7 +73,7 @@ export function unicorn() {
         'unicorn/prefer-string-raw': 'warn',
       },
     },
-  ]
+  ];
 
-  return config
+  return config;
 }

@@ -1,6 +1,6 @@
 // @ts-check
 
-import plugin from 'eslint-plugin-no-only-tests'
+import plugin from 'eslint-plugin-no-only-tests';
 
 export function noOnlyTests() {
   /** @type {import('eslint').Linter.Config[]} */
@@ -14,7 +14,7 @@ export function noOnlyTests() {
         'no-only-tests/no-only-tests': 'error',
       },
     },
-  ]
+  ];
 
-  return config
+  return config;
 }

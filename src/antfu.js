@@ -1,4 +1,4 @@
-import antfuPlugin from 'eslint-plugin-antfu'
+import antfuPlugin from 'eslint-plugin-antfu';
 
 export function antfu() {
   /** @type {import('eslint').Linter.Config[]} */
@@ -13,7 +13,7 @@ export function antfu() {
         'antfu/top-level-function': 'error',
       },
     },
-  ]
+  ];
 
-  return config
+  return config;
 }

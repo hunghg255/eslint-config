@@ -1,13 +1,15 @@
 // @ts-check
 
-import { antfu } from './antfu.js'
-import { ignores } from './ignores.js'
-import { imports } from './imports.js'
-import { noOnlyTests } from './no-only-tests.js'
-import { packageJson } from './package-json.js'
-import { stylistic } from './stylistic.js'
-import { typescript } from './typescript.js'
-import { unicorn } from './unicorn.js'
+import progress from 'eslint-plugin-file-progress';
+
+import { antfu } from './antfu.js';
+import { ignores } from './ignores.js';
+import { imports } from './imports.js';
+import { noOnlyTests } from './no-only-tests.js';
+import { packageJson } from './package-json.js';
+import { stylistic } from './stylistic.js';
+import { typescript } from './typescript.js';
+import { unicorn } from './unicorn.js';
 
 export function basic() {
   /** @type {import('eslint').Linter.Config[]} */
@@ -20,7 +22,8 @@ export function basic() {
     ...antfu(),
     ...noOnlyTests(),
     ...stylistic(),
-  ]
+    progress.configs.recommended,
+  ];
 
-  return config
+  return config;
 }

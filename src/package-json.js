@@ -1,9 +1,9 @@
 // @ts-check
 
-import plugin from 'eslint-plugin-jsonc'
-import parser from 'jsonc-eslint-parser'
+import plugin from 'eslint-plugin-jsonc';
+import parser from 'jsonc-eslint-parser';
 
-import { GLOB_PACKAGE_JSON } from './shared.js'
+import { GLOB_PACKAGE_JSON } from './shared.js';
 
 /**
  * Sort package.json keys
@@ -79,7 +79,7 @@ export function packageJson() {
         ],
       },
     },
-  ]
+  ];
 
-  return config
+  return config;
 }

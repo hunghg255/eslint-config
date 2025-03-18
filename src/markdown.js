@@ -1,20 +1,20 @@
 // @ts-check
 
-import markdownPlugin from '@eslint/markdown'
+import markdownPlugin from '@eslint/markdown';
 
-import { GLOB_MARKDOWN, GLOB_SRC, GLOB_VUE } from './shared.js'
+import { GLOB_MARKDOWN, GLOB_SRC, GLOB_VUE } from './shared.js';
 
 export function markdown() {
-  const recommended = markdownPlugin.configs?.processor
+  const recommended = markdownPlugin.configs?.processor;
 
   /** @type {import('eslint').Linter.Config[]} */
   const recommendedConfig = Array.isArray(recommended)
     ? recommended
     : (() => {
-        throw new Error(
-          '[@hunghg255/eslint-config] markdown recommended is not an array',
-        )
-      })()
+      throw new Error(
+        '[@hunghg255/eslint-config] markdown recommended is not an array',
+      );
+    })();
 
   /** @type {import('eslint').Linter.Config[]} */
   const config = [
@@ -57,7 +57,7 @@ export function markdown() {
         'no-restricted-imports': 'off',
       },
     },
-  ]
+  ];
 
-  return config
+  return config;
 }

@@ -1,16 +1,16 @@
 // @ts-check
 
-import eslint from '@eslint/js'
-import tseslint from 'typescript-eslint'
+import eslint from '@eslint/js';
+import tseslint from 'typescript-eslint';
 
-import { GLOB_JS, GLOB_JSX, GLOB_TEST, GLOB_TS, GLOB_TSX } from './shared.js'
+import { GLOB_JS, GLOB_JSX, GLOB_TEST, GLOB_TS, GLOB_TSX } from './shared.js';
 
-export { tseslint }
+export { tseslint };
 
 export function typescript() {
   const rules = [...tseslint.configs.recommended, ...tseslint.configs.stylistic]
     .map((config) => config.rules || {})
-    .reduce((acc, cur) => ({ ...acc, ...cur }), {})
+    .reduce((acc, cur) => ({ ...acc, ...cur }), {});
 
   /** @type {import('@typescript-eslint/utils').TSESLint.FlatConfig.ConfigArray} */
   const config = [
@@ -74,7 +74,7 @@ export function typescript() {
           { checksVoidReturn: false },
         ],
         '@typescript-eslint/await-thenable': 'error',
-        '@typescript-eslint/unbound-method': 'error',
+        '@typescript-eslint/unbound-method': 'off',
 
         // `type T1 = T0` and `interface T2 extends T0 {}` have the same meaning
         // but different behavior in TypeScript type checking. `T1` and `T0` are
@@ -91,6 +91,7 @@ export function typescript() {
         '@typescript-eslint/require-await': 'warn',
 
         'indent': 'warn',
+        quotes: ['error', 'single']
       },
     },
     {
@@ -114,11 +115,11 @@ export function typescript() {
         '@typescript-eslint/no-empty-function': 'off',
       },
     },
-  ]
+  ];
 
   /** @type {import('eslint').Linter.Config[]} */
   // @ts-expect-error: unmatched type
-  const configTyped = config
+  const configTyped = config;
 
-  return configTyped
+  return configTyped;
 }

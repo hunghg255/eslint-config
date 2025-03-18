@@ -1,4 +1,4 @@
-import prettierConfig from 'eslint-config-prettier'
+import prettierConfig from 'eslint-config-prettier';
 
 /**
  * Turns off all rules that are unnecessary or might conflict with Prettier.
@@ -15,7 +15,7 @@ export function prettier() {
         ...prettierConfig.rules,
       },
     },
-  ]
+  ];
 
-  return config
+  return config;
 }
