@@ -36,7 +36,7 @@ dependencies:
     specifier: ^3.0.2
     version: 3.0.2(eslint@9.22.0)
   eslint-plugin-import-x:
-    specifier: ^4.8.0
+    specifier: ^4.6.1
     version: 4.8.0(eslint@9.22.0)(typescript@5.8.2)
   eslint-plugin-jsonc:
     specifier: ^2.19.1
